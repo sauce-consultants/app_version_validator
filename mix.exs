@@ -25,7 +25,7 @@ defmodule Plug.AppVersionValidator.Mixfile do
 
   defp description do
     """
-    Basic resource / URL signing for Plug-based Elixir apps.
+    Basic App Version validation against an minimum requirement for an API
     """
   end
 
