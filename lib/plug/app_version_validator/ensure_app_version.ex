@@ -20,7 +20,7 @@ defmodule AppVersionValidator.Plug.EnsureAppVersion do
   defp find_app_version(conn) do
     conn.req_headers
     |> Enum.find(nil, fn({header, _value}) ->
-      header == "AppVersion"
+      String.downcase(header) == "appversion"
     end)
     |> case do
       nil -> nil
