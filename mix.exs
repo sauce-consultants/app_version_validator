@@ -26,6 +26,11 @@ defmodule Plug.AppVersionValidator.Mixfile do
   defp description do
     """
     Basic App Version validation against an minimum requirement for an API
+
+
+    This should be useful if your API requires a minimum App version to be
+    making the calls. If the App version is below the minimum the plug will
+    return a http status of 418.
     """
   end
 
