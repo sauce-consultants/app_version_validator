@@ -32,7 +32,7 @@ defmodule AppVersionValidator.Plug.EnsureAppVersion do
     conn
     |> halt()
     |> put_resp_content_type("text/plain")
-    |> send_resp(418, "The app version it below the minumum required: #{minimum_app_version}")
+    |> send_resp(418, "The app version supplied is below the minumum required: #{minimum_app_version}")
   end
   defp handle_response(:ok, conn), do: conn
 end
