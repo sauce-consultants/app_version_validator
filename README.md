@@ -5,7 +5,7 @@ sure that the API should respond as normal, or just return an error.
 
 The error we are using is [418 I'm a Teapot](https://httpstatuses.com/418)
 
-The API calls should contain a header of `app_version`
+The API calls should contain a header of `AppVersion`
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed

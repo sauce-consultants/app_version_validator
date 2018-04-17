@@ -3,7 +3,7 @@ defmodule AppVersionValidator.Plug.EnsureAppVersion do
   Plug Module to validate that the app version passed in meets the minimum
   requirements
 
-  The app_version should be contained in the header of the API call.
+  The AppVersion should be contained in the header of the API call.
   """
 
   import Plug.Conn
@@ -20,7 +20,7 @@ defmodule AppVersionValidator.Plug.EnsureAppVersion do
   defp find_app_version(conn) do
     conn.req_headers
     |> Enum.find(nil, fn({header, _value}) ->
-      header == "app_version"
+      header == "AppVersion"
     end)
     |> case do
       nil -> nil
