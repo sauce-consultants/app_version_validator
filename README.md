@@ -28,7 +28,7 @@ be found at [https://hexdocs.pm/app_version_validator](https://hexdocs.pm/app_ve
 ```
 config :app_version_validator, AppVersionValidator,
   minimum_app_version: "1.0.0",
-  nil_version_allows: false #optional
+  nil_version_allowed: true #optional
 ```
 
 
