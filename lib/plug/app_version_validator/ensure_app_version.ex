@@ -1,6 +1,9 @@
 defmodule AppVersionValidator.Plug.EnsureAppVersion do
   @moduledoc """
-  Plug Module to validate that the app version passed in meets the minimum requirements
+  Plug Module to validate that the app version passed in meets the minimum
+  requirements
+
+  The app_version should be contained in the header of the API call.
   """
 
   import Plug.Conn

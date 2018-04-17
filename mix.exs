@@ -32,9 +32,6 @@ defmodule Plug.AppVersionValidator.Mixfile do
     making the calls.
     If the App version is below the minimum requirement, the plug will return a
     http status of 418.
-
-
-    The API calls should contain a header of app_version
     """
   end
 
